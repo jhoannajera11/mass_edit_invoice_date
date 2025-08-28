@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_open_update_invoice_date_wizard" model="ir.actions.server">
+            <field name="name">Cambiar Fecha de Factura (Masivo)</field>
+            <field name="model_id" ref="account.model_account_move"/>
+            <field name="binding_model_id" ref="account.model_account_move"/>
+            <field name="binding_view_types">list</field>
+            <field name="state">code</field>
+            <field name="code">
+action = env['ir.actions.act_window']._for_xml_id('mass_edit_invoice_date.update_invoice_date_wizard_action')
+            </field>
+        </record>
+
+        <record id="update_invoice_date_wizard_action" model="ir.actions.act_window">
+            <field name="name">Establecer Nueva Fecha de Factura</field>
+            <field name="res_model">update.invoice.date.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
