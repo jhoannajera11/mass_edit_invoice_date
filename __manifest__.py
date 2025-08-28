@@ -8,7 +8,6 @@
         facturas en estado borrador de forma simultánea.
     """,
     'author': "Humanytek",
-    'website': "https://humanytek.com/",
     'category': 'Accounting/Accounting',
     'version': '18.0.1.0.0',
     'depends': ['account'],
